@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 50%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CDC0D5;
+}
+.logo {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.auth {
+    display: flex;
+}
+.auth p {
+    display: none;
+}
+main {
+    display: flex;
+}
+.menu {
+    background-color: #EFF8FB;
+    padding: 3rem;
+}
+.menu > ul li {
+    margin: 1rem 0;
+    font-weight: bold;
+}
+.menu > ul li:last-child li {
+    margin: 0 1rem;
+}
