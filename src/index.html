@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/01bc688679.js" crossorigin="anonymous"></script>
     <title><%=htmlWebpackPlugin.options.title%></title>
 </head>
 <body>
     <div class="container">
         <header>
             <div class="logo">
-                <div>
-                    <img alt="logo" class="logo-img">
-                </div>
-                <div class="logo-text">To-Do</div>
+                <div><i class="fa-sharp fa-solid fa-bars"></i></div>
+                <img alt="logo" class="logo-img">
+                <p class="logo-text">To-Do</p>
             </div>
             <div class="auth">
-                <p>Hello, demo@gmailcom</p>
+                <p class="email">Hello, demo@gmailcom</p>
                 <button>Sign Out</button>
             </div>
         </header>
@@ -29,11 +29,34 @@
                     <li>
                         Projects
                         <ul>
-                            <li>chores</li>
+                            <li>Chores</li>
                             <li>Current Project</li>
                         </ul>
                     </li>
                 </ul>
+            </div>
+            <div class="todo-list">
+                <div class="header">
+                    <h2>Home</h2>
+                    <h3>Due Date</h3>
+                </div>
+                <div class="todos">
+                    <ul>
+                        <li>
+                            <div class="todo">
+                                <input type="checkbox" name="todo">
+                                <p>Demo Test</p>
+                            </div>
+                            <div class="right">
+                                <div class="date">9/22/2020</div>
+                                <div class="options">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </main>
     </div>
