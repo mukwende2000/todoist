@@ -1,0 +1,210 @@
+@font-face {
+    font-family: balow;
+    src: url('./Barlow/Barlow-Medium.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: balow;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CDC0D5;
+    padding: 1rem;
+}
+.fa-bars {
+    font-size: 2rem;
+    cursor: pointer;
+}
+.logo-img, .logo-text {
+    width: 100px;
+    justify-content: space-between;
+    display: none;
+}
+.auth {
+    display: flex;
+}
+.auth .email {
+    margin-right: 2rem;
+    display: none;
+}
+.auth button {
+    padding: .5rem;
+    border: none;
+    cursor: pointer;
+}
+main {
+    display: flex;
+}
+.menu {
+    background-color: #EFF8FB;
+    padding: 3rem;
+    position: fixed;
+    top: 65px;
+    bottom: 0;
+    left: -270px;
+    transition: all .3s;
+}
+.menu li {
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+    list-style: none;
+    transition: all .4s;
+}
+.menu li:not(:last-child):hover {
+    color: coral;
+}
+.menu > ul li:last-child li {
+    margin: 1rem;
+    font-size: 1rem;
+    color: grey;
+}
+.menu > ul li:last-child li:hover {
+    color: rgb(223, 152, 126);
+}
+.active {
+    left: 0;
+}
+.todo-list {
+    width: 100%;
+    padding: 2rem;
+}
+.header {
+    display: flex;
+    justify-content: space-between; 
+    width: 83%;
+}
+
+.todos ul li {
+    padding-block: .2rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(201, 240, 255);
+    border-top: 1px solid rgb(201, 240, 255);
+    cursor: pointer;
+}
+.todos ul li:hover .right .options {
+    opacity: 1;
+}
+.todo p {
+    margin: 0 1rem;
+}
+.date {
+    margin: 0 1.5rem;
+    color: red;
+}
+.options i {
+    color: grey;
+    transition: .2s;
+}
+.options i:first-child {
+    margin-right: .5rem;
+}
+.options {
+    opacity: 0;
+}
+.options i:hover {
+    color: black;
+    font-size: 1.07rem;
+}
+.todo, .right {
+    display: flex;
+}
+.wrapper {
+    width: 90%;
+    padding: 1rem;
+    position: fixed;
+    margin: auto;
+    left: 5%;
+    top: 40%;
+    border: 2px solid skyblue;
+    border-radius: 20px;
+    display: none;
+}
+input {
+    border-radius: 10px;
+    border: none;
+    font-size: 1.3rem;
+}
+.wrapper > input:last-of-type {
+    width: 70%;
+}
+input:focus {
+    outline: none;
+}
+.wrapper > input:nth-child(2) {
+    margin: 1rem 0;
+}
+.wrapper > div:first-of-type input {
+    border: 1px solid skyblue;
+    padding: .4rem;
+    margin-bottom: .3rem;
+}
+.wrapper button {
+    cursor: pointer;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding: .4rem;
+}
+.popupBtn {
+    font-size: 3rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+}
+.message {
+    color: red;
+    font-style: italic;
+}
+@media(min-width: 768px) {
+    .menu {
+        left: 0;
+    }
+    .fa-bars {
+        display: none;
+    }
+    .auth .email {
+        display: initial;
+    }
+    .todo-list {
+        width: 60%;
+        margin: auto 300px;
+        outline: 1px solid coral;
+    }
+    .date {
+        margin-right: 5rem;
+    }
+    .logo-img, .logo-text {
+        display: initial;
+    }
+    .logo-img {
+        width: 30px;
+    }
+    .wrapper {
+        display: block;
+        position: initial;
+        width: 30%;
+        margin: 10px;
+    }
+    .popupBtn, .cancelBtn {
+        display: none;
+    }
+}

@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/01bc688679.js" crossorigin="anonymous"></script>
     <title>Todoist</title>
-<script defer src="main.379e7d5d1f2a51747ad5.js"></script></head>
+<script defer src="main.5a9483cdb097f2a2783b.js"></script></head>
 <body>
-    <h1>hello world</h1>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div><i class="fa-sharp fa-solid fa-bars"></i></div>
+                <img alt="logo" class="logo-img">
+                <p class="logo-text">To-Do</p>
+            </div>
+            <div class="auth">
+                <p class="email">Hello, demo@gmailcom</p>
+                <button>Sign Out</button>
+            </div>
+        </header>
+        <main>
+            <div class="menu">
+                <ul>
+                    <li class="link">Home</li>
+                    <li class="link">Today</li>
+                    <li class="link">Week</li>
+                    <li>
+                        Projects
+                        <ul class="projects">
+                            <li class="project">Chores</li>
+                            <li class="project">Coding</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="todo-list">
+                <div class="header">
+                    <h2>Home</h2>
+                    <h3>Due Date</h3>
+                </div>
+                <div class="todos">
+                    <ul></ul>
+                    <button class="popupBtn">+</button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <input type="text" class="title-input" placeholder="title: e.g Laundry">
+                <input type="text" class="details-input" placeholder="details: e.g fold laundry at 4pm">
+                <div>
+                    <input type="date" class="date-input" name="" id="">
+                    <input type="text" class="project-input" placeholder="project name">
+                </div>
+                <div>
+                    <button class="addTaskBtn">Add Task</button>
+                    <button class="editTaskBtn">Edit Task</button>
+                    <button class="cancelBtn">Cancel</button>
+                </div>
+                <div class="message"></div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
