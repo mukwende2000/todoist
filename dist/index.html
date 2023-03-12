@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/01bc688679.js" crossorigin="anonymous"></script>
     <title>Todoist</title>
-<script defer src="main.5d3bde47a3b2726f082c.js"></script></head>
+<script defer src="main.1ed960115d5f56d42886.js"></script></head>
 <body>
     <div class="container">
         <header>
@@ -23,14 +23,14 @@
         <main>
             <div class="menu">
                 <ul>
-                    <li>Home</li>
-                    <li>Today</li>
-                    <li>Week</li>
+                    <li class="link">Home</li>
+                    <li class="link">Today</li>
+                    <li class="link">Week</li>
                     <li>
                         Projects
                         <ul>
-                            <li>Chores</li>
-                            <li>Current Project</li>
+                            <li class="link">Chores</li>
+                            <li class="link">Current Project</li>
                         </ul>
                     </li>
                 </ul>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="todos">
                     <ul>
-                        <li>
+                        <li class="task">
                             <div class="todo">
                                 <input type="checkbox" name="todo">
                                 <p>Demo Test</p>
@@ -56,6 +56,20 @@
                             </div>
                         </li>
                     </ul>
+                    <button class="popupBtn">+</button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <input type="text" placeholder="title: e.g Laundry">
+                <input type="text" placeholder="details: e.g fold laundry at 4pm">
+                <div>
+                    <input type="date" name="" id="">
+                    <input type="text" placeholder="project name">
+                </div>
+                <div>
+                    <button class="addTaskBtn">Add Task</button>
+                    <button class="editTaskBtn">Edit Task</button>
+                    <button class="Cancel">Cancel</button>
                 </div>
             </div>
         </main>
