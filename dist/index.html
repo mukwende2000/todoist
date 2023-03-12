@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/01bc688679.js" crossorigin="anonymous"></script>
     <title>Todoist</title>
-<script defer src="main.1ed960115d5f56d42886.js"></script></head>
+<script defer src="main.5a9483cdb097f2a2783b.js"></script></head>
 <body>
     <div class="container">
         <header>
@@ -28,9 +28,9 @@
                     <li class="link">Week</li>
                     <li>
                         Projects
-                        <ul>
-                            <li class="link">Chores</li>
-                            <li class="link">Current Project</li>
+                        <ul class="projects">
+                            <li class="project">Chores</li>
+                            <li class="project">Coding</li>
                         </ul>
                     </li>
                 </ul>
@@ -41,36 +41,23 @@
                     <h3>Due Date</h3>
                 </div>
                 <div class="todos">
-                    <ul>
-                        <li class="task">
-                            <div class="todo">
-                                <input type="checkbox" name="todo">
-                                <p>Demo Test</p>
-                            </div>
-                            <div class="right">
-                                <div class="date">9/22/2020</div>
-                                <div class="options">
-                                    <i class="fa-regular fa-pen-to-square"></i>
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                    <ul></ul>
                     <button class="popupBtn">+</button>
                 </div>
             </div>
             <div class="wrapper">
-                <input type="text" placeholder="title: e.g Laundry">
-                <input type="text" placeholder="details: e.g fold laundry at 4pm">
+                <input type="text" class="title-input" placeholder="title: e.g Laundry">
+                <input type="text" class="details-input" placeholder="details: e.g fold laundry at 4pm">
                 <div>
-                    <input type="date" name="" id="">
-                    <input type="text" placeholder="project name">
+                    <input type="date" class="date-input" name="" id="">
+                    <input type="text" class="project-input" placeholder="project name">
                 </div>
                 <div>
                     <button class="addTaskBtn">Add Task</button>
                     <button class="editTaskBtn">Edit Task</button>
-                    <button class="Cancel">Cancel</button>
+                    <button class="cancelBtn">Cancel</button>
                 </div>
+                <div class="message"></div>
             </div>
         </main>
     </div>

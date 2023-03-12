@@ -170,7 +170,10 @@ input:focus {
     bottom: 50px;
     cursor: pointer;
 }
-
+.message {
+    color: red;
+    font-style: italic;
+}
 @media(min-width: 768px) {
     .menu {
         left: 0;
@@ -201,7 +204,7 @@ input:focus {
         width: 30%;
         margin: 10px;
     }
-    .popupBtn {
+    .popupBtn, .cancelBtn {
         display: none;
     }
 }
