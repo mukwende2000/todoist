@@ -14,12 +14,19 @@ export default function(e) {
         const newArray = todos.filter(todo => {
             return todo.projectName === e.target.textContent
         })
-
+        console.log(newArray)
+        console.log(todos)
         ul.innerHTML = ''
         newArray.forEach(todo => {
         const myTodo = todo.createTodo()
         ul.appendChild(myTodo)
     })
-        console.log(newArray)
+        
+    } else if(e.target.textContent === 'Home') {
+        ul.innerHTML = ''
+        todos.forEach(todo => {
+            const myTodo = todo.createTodo()
+            ul.appendChild(myTodo)
+        })
     }
 }
