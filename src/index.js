@@ -4,9 +4,25 @@ import ToDoListHeader from './components/todoListHeader'
 import Form from './components/form'
 import addTodo from './addTodo'
 import deleteTodo from './deleteTodo'
-import route from './components/route'
+import route from './route'
 import { applyEdit,initializeEdit } from './editTodo'
+import populateTodo from './populateTodo'
+import { todos } from './addTodo'
+import createProject from './createProject'
+import Store from './components/store'
 
+// window.addEventListener('DOMContentLoaded', () => {
+//     if(localStorage.getItem('todo')) {
+        
+//         const storedTodos = Store.getTodo()
+//         storedTodos.forEach(todo => {
+//             todos.push(todo)
+//         })
+//         console.log(todos)
+//         // populateTodo(todos)
+//     }
+// })
+    
 
 const logoImg = document.querySelector('.logo-img')
 const menu = document.querySelector('.menu')
@@ -28,7 +44,13 @@ burger.addEventListener('click', () => {
 links.forEach(link => {
     link.addEventListener('click', route)
 })
-addTaskBtn.addEventListener('click', addTodo)
+addTaskBtn.addEventListener('click', () => {
+    addTodo()
+    populateTodo(todos)
+    createProject(todos[todos.length - 1])
+    Store.storeTodo(todos)
+})
+
 popupBtn.addEventListener('click', form.show)
 cancelBtn.addEventListener('click', form.hide)
 editTaskBtn.addEventListener('click', applyEdit)
