@@ -26,6 +26,17 @@ export default function(e) {
         ul.innerHTML = ''
         todos.forEach(todo => {
             const myTodo = todo.createTodo()
+            console.log(todo.dueDate.slice(8) == new Date().getDate())
+            ul.appendChild(myTodo)
+        })
+    } else if(e.target.textContent = 'Today') {
+        
+        const newArray = todos.filter(todo => {
+            return todo.dueDate.slice(8) == new Date().getDate()
+        })
+        ul.innerHTML = ''
+        newArray.forEach(todo => {
+            const myTodo = todo.createTodo()
             ul.appendChild(myTodo)
         })
     }
